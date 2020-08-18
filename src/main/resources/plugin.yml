@@ -2,7 +2,7 @@ name: ${project.name}
 version: ${project.version}
 main: me.messageofdeath.commandnpc.CommandNPC
 
-author: messageofdeath
+author: messageofdeath+steviebeenz
 
 depend: [Citizens]
 softdepend: [Vault, PlaceholderAPI]
