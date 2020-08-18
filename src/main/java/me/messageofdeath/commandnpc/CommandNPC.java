@@ -182,12 +182,12 @@ public class CommandNPC extends JavaPlugin {
 
 	private void setupEconomy() {
 		if (getServer().getPluginManager().getPlugin("Vault") == null) {
-			log("Vault not found! Economy support for CommandNPC has been disabled.", true);
+			log("Vault not found! Economy support for CommandNPC has been disabled. Please install Vault", true);
 			return;
 		}
 		RegisteredServiceProvider<Economy> rsp = getServer().getServicesManager().getRegistration(Economy.class);
 		if (rsp == null) {
-			log("Vault compatible economy not found! Economy support for CommandNPC has been disabled.", true);
+			log("Vault compatible economy not found! Economy support for CommandNPC has been disabled. Please install a plugin like Essentials Rco or The New Economy", true);
 			return;
 		}
 		econ = rsp.getProvider();
