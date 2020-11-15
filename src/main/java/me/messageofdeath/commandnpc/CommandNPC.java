@@ -51,11 +51,6 @@ public class CommandNPC extends JavaPlugin {
 		this.reloadConfigX();
 		CommandNPC.prefix = CommandNPC.getColorized(LanguageSettings.General_PluginTag.getSetting());
 		/** --------------Checking for Dependencies-------------- **/
-		if (!getServer().getPluginManager().isPluginEnabled("Citizens")) {
-			this.logError("Required Dependencies", "commandnpc", "onEnable()", "Citizens 2 not found! commandnpc will now shut down.");
-			super.getServer().getPluginManager().disablePlugin(this);
-			return;
-		}
 		if (getServer().getPluginManager().isPluginEnabled("PlaceholderAPI")) {
 			placeHolderAPI = true;
 		}
